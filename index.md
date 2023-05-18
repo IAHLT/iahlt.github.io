@@ -16,7 +16,7 @@ Each release comes with scripts and pretrained models. For details, see the READ
 
 ## Member resources
 
-Please contact info@iahlt.com to inquire about access.
+Please contact info@iahlt.org to inquire about access.
 
 | Resource   |      Text Type      |  Quantities |
 |--------------|----------------|-----------|
