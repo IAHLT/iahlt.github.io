@@ -1,68 +1,79 @@
-# IAHLT Open Repositories
+# Israeli Association of Human Language Technologies
 
-IAHLT is a nonprofit organization whose goal is to create annotated datasets for Hebrew and Arabic. We open-source several of our resources to the public, and the rest is accessible to fee-paying members only.
-Down the page, you have links to our open resource; our full nonopen resources include:
+IAHLT is a nonprofit organization whose goal is to create annotated datasets
+for Hebrew and Arabic. We open-source several of our resources to the public,
+and the rest is accessible to fee-paying members only.
+
+## Open resources
+
+Each release comes with scripts and pretrained models. For details, see the README in each repository.
+
+| Resource | Type | Size |
+|----------| ---- | ---- |
+| [`UD_Hebrew-IAHLTwiki`](https://github.com/IAHLT/UD_Hebrew-IAHLTwiki) | treebank + named entities, conllu + biose | 5k sentences |
+| [`UD_Hebrew-IAHLTknesset`](https://github.com/IAHLT/UD_Hebrew-IAHLTknesset) | treebank, conllu | 2.5k sentences |
+| [`Arabic-Morphology-IAHLT`](https://github.com/IAHLT/Arabic-Morphology-IAHLT) | morphology, conllu | 5k sentences |
+
+## Member resources
+
+Please contact info@iahlt.com to inquire about access.
 
 | Resource   |      Text Type      |  Quantities |
 |--------------|----------------|-----------|
-| Hebrew Universal Depdencies |  diverse | 40,000 sentences |
+| Hebrew Universal Dependencies |  diverse | 40,000 sentences |
 | Hebrew Named Entities | diverse | 47,000 paragraphs |
-| Arabic Morphology | newspaper | 5,000 sentences |
 | Arabic Named Entities | newspaper | 75,000 paragraphs |
 | Arabic Morphology | newspaper | 5,000 sentences |
 | Arabic transcriptions - Palestinian dialects | diverse | 72,300 tokens|
 
-We also have UD and NER parsers trained over these resources.
+We also have UD and NER parsers trained over these resources. 
 
-Please contact info@iahlt.com for more information.
+###  Hebrew Universal Dependencies
 
-## Linguistically Annotated Resource
+Our Hebrew treebank consists of over 45k dependency trees, including hundreds
+of complete documents, from Hebrew Wikipedia, the entitlement advocacy
+organisation Kol Zchut, the technology magazine Geektime, and the news sites
+Davar and Israel Hayom.
 
-### Hebrew Universal Dependencies
+| Source  | Genres  | no. Sentences  | no. Documents |
+| ------  | ------  | -------------  | ------------- |
+| Davar  | Hebrew news  | 11224  | 369 |
+| GeekTime  | News, writing for the web, sometimes nonstandard Hebrew  | 4213  | 0 |
+| Israel Hayom  | Hebrew news  | 94  | 3 |
+| Kol Zchut  | Information about entitlements rights of Israelis  | 11214  | 313 |
+| Wikipedia  | Biographies, events, locations, legal, medical  | 11309  | 75 |
 
-1. The Hebrew-IAHLTwiki treebank consists of 5,000 contemporary Hebrew sentences representing a variety of texts originating from Wikipedia entries. It includes various text domains, such as: biography, law, finance, health, places, events and miscellaneous.
-2. IAHLTKnesset – Further UD annotations of 2,619 sentences from the Knesset protocols.
-
-### Hebrew Named Entities
-
-In this project, we aim to annotate various types of named entities in Hebrew texts. Our annotation focuses on identifying and categorizing entities such as persons, organizations, locations, events, time expressions, works of art, products, languages, titles, and miscellaneous entities. Additionally, we have a category called "informal" (INF) to capture informal entities.
-
-To ensure comprehensive coverage, we use the following abbreviations to represent each entity type:
-
-- PER: Person
-- ORG: Organization
-- LOC: Location
-- EVE: Event
-- TIMEX: Time Expression
-- WOA: Work of Art
-- ANG: Product
-- GPE: Language
-- TTL: Title
-- MISC: Miscellaneous
-- INFORMAL: Informal Entity
+Two independent annotations for over 6k of the 36k total sentences. Kappa
+inter-annotator agreement score per-feature.
 
 ### Arabic Morphology
 
-The IAHLT Arabic lemmatisation corpus is a valuable resource that provides annotations for lemma and part-of-speech of Modern Standard Arabic texts used in Israel. This corpus serves as an essential tool for natural language processing (NLP) tasks, enabling researchers and developers to analyze and understand the linguistic properties of Arabic texts. By providing annotations for lemmas and part-of-speech, this corpus supports various NLP applications, such as language modeling, text classification, sentiment analysis, and machine translation. Researchers can leverage this resource to enhance Arabic NLP systems and facilitate deeper linguistic analysis of Arabic language data.
+Our Arabic lemmatisation and part-of-speech tagging corpus consists of 4521
+annotations of 3521 sentences (with a total of 130037 tokens annotated, 10135
+unique lemmas) for lemma and part-of-speech. The texts were sampled from the
+news articles. For the multiply-annotated sentences, inter-annotator agreement
+statistics are included.
 
+### Arabic and Hebrew Named Entities
 
-### Arabic Named Entities
+Our named entities corpus includes over 122k paragraphs, over 11k documents in
+Arabic and Hebrew, annotated for 13 entity types.
 
-Equivalent to the Hebrew Named Entities project above.
+| Language  | Source  | no. Paragraphs  | no. Articles | 
+| --------  | ------  | --------------  | ------------ | 
+| Hebrew  | Davar, Wikipedia and Israel Hayom  | 47k  | 2829 | 
+| Arabic  | News | 75k  | 8315 | 
 
-### Hebrew Video Transcriptions
+### Palestinian Arabic Transcriptions
 
-The IAHLT Palestinian Arabic corpus is a valuable resource consisting of transcribed texts from Creative Commons YouTube videos in Palestinian Arabic. The corpus serves as an annotation effort aimed at modeling the language used in social media and aiding text-to-speech systems. The transcriptions, following standardized guidelines, provide insights into the linguistic characteristics and variations of Palestinian Arabic. By leveraging this corpus, researchers and developers can enhance their understanding of the language, improve social media language modeling, and develop more accurate text-to-speech systems specific to the Palestinian Arabic dialect.
+Our Palestinian Arabic corpus consists of 90k tokens of transcribed text from
+32 YouTube videos. Ten of these videos were independently annotated twice to
+study inter-annotator agreement; the annotations and our calculated agreements
+are included.
 
-
-## Parsers
-
-### HebPipe
-
-HebPipe, developed by Amir Zeldes for IAHLT, is an advanced parser designed specifically for commercial applications. It utilizes cutting-edge techniques, such as the biaffine approach, to accurately analyze the grammatical structure of Hebrew text. By incorporating state-of-the-art models like AlephBERT, HebPipe ensures precise representation of input text. Its exceptional performance in various parsing tasks, including segmentation, lemmatization, and parsing accuracy, makes it a powerful tool for commercial users seeking reliable and high-quality language analysis. Whether you're building chatbots, developing natural language processing applications, or improving text understanding, HebPipe offers industry-leading parsing capabilities for enhancing the efficiency and accuracy of your language-based solutions.
-
-
-### Arabic trankit model for morphology
-
-IAHLT has developed a freely available udpipe model that performs various linguistic analyses, including sentence segmentation, tokenization, lemmatization, and part-of-speech tagging. This model is trained on a dataset of 2,000 sentences and is designed to provide accurate linguistic annotations for text processing tasks. To access the udpipe model, you can install it using pip for Python usage or clone and compile it for command-line interface (CLI) usage. The detailed instructions for installation and usage can be found in the provided documentation.
+ | Year  | Videos  | Duration (min)  | no. Tokens | 
+ | ----  | ------  | --------------  | ---------- | 
+ | 2010-2014  | 4  | 18  | 2131 | 
+ | 2015-2019  | 19  | 484  | 37026 | 
+ | 2020-  | 9  | 503  | 44133 | 
 
