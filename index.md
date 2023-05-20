@@ -12,7 +12,7 @@ Each release comes with scripts and pretrained models. For details, see the READ
 |----------| ---- | ---- |
 | [`UD_Hebrew-IAHLTwiki`](https://github.com/IAHLT/UD_Hebrew-IAHLTwiki) | treebank + named entities, conllu + biose | 5k sentences |
 | [`UD_Hebrew-IAHLTknesset`](https://github.com/IAHLT/UD_Hebrew-IAHLTknesset) | treebank, conllu | 2.5k sentences |
-| [`Arabic-Morphology-IAHLT`](https://github.com/IAHLT/Arabic-Morphology-IAHLT) | morphology, conllu | 5k sentences |
+| [`Arabic-Morphology-IAHLT`](https://github.com/IAHLT/Arabic-Morphology-IAHLT) | morphology, conllu | 2k sentences |
 
 ## Member resources
 
