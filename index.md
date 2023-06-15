@@ -20,11 +20,11 @@ Please contact info@iahlt.org to inquire about access.
 
 | Resource   |      Text Type      |  Quantities |
 |--------------|----------------|-----------|
-| Hebrew Universal Dependencies |  diverse | 40,000 sentences |
+| Hebrew Universal Dependencies |  diverse | 48,000 sentences |
 | Hebrew Named Entities | diverse | 47,000 paragraphs |
 | Arabic Named Entities | newspaper | 75,000 paragraphs |
-| Arabic Morphology | newspaper | 5,000 sentences |
-| Arabic transcriptions - Palestinian dialects | diverse | 72,300 tokens|
+| Arabic Morphology | newspaper | 5,973 sentences |
+| Arabic transcriptions - Palestinian dialects | diverse | 93,000 tokens|
 
 We also have UD and NER parsers trained over these resources. 
 
@@ -39,30 +39,31 @@ Davar and Israel Hayom.
 | ------  | ------  | -------------  | ------------- |
 | Davar  | Hebrew news  | 11224  | 369 |
 | GeekTime  | News, writing for the web, sometimes nonstandard Hebrew  | 4213  | 0 |
-| Israel Hayom  | Hebrew news  | 94  | 3 |
+| Israel Hayom  | Hebrew news  | 386  | 7 |
+| Knesset | Knesset protocols | 2883 | 100 |
 | Kol Zchut  | Information about entitlements rights of Israelis  | 11214  | 313 |
-| Wikipedia  | Biographies, events, locations, legal, medical  | 11309  | 75 |
+| Wikipedia  | Biographies, events, locations, legal, medical  | 11309  | 78 |
 
-Two independent annotations for over 6k of the 36k total sentences. Kappa
+Two independent annotations for over 6k of the 39k total sentences. Kappa
 inter-annotator agreement score per-feature.
 
 ### Arabic Morphology
 
-Our Arabic lemmatisation and part-of-speech tagging corpus consists of 4521
-annotations of 3521 sentences (with a total of 130037 tokens annotated, 10135
+Our Arabic lemmatisation and part-of-speech tagging corpus consists of 5973
+annotations of 4869 sentences (with a total of 171722 tokens annotated, 12190
 unique lemmas) for lemma and part-of-speech. The texts were sampled from the
 news articles. For the multiply-annotated sentences, inter-annotator agreement
 statistics are included.
 
 ### Arabic and Hebrew Named Entities
 
-Our named entities corpus includes over 122k paragraphs, over 11k documents in
+Our named entities corpus includes over 123k paragraphs, over 11k documents in
 Arabic and Hebrew, annotated for 13 entity types.
 
-| Language  | Source  | no. Paragraphs  | no. Articles | 
-| --------  | ------  | --------------  | ------------ | 
-| Hebrew  | Davar, Wikipedia and Israel Hayom  | 47k  | 2829 | 
-| Arabic  | News | 75k  | 8315 | 
+| Language  | Source  | no. Paragraphs  | no. Articles |
+| --------  | ------  | --------------  | ------------ |
+| Hebrew  | Davar, Israel Hayom, Knesset protocols, and Wikipedia | 47k  | 2923 |
+| Arabic  | News | 75k  | 8342 |
 
 ### Palestinian Arabic Transcriptions
 
@@ -71,9 +72,9 @@ Our Palestinian Arabic corpus consists of 90k tokens of transcribed text from
 study inter-annotator agreement; the annotations and our calculated agreements
 are included.
 
- | Year  | Videos  | Duration (min)  | no. Tokens | 
- | ----  | ------  | --------------  | ---------- | 
- | 2010-2014  | 4  | 18  | 2131 | 
- | 2015-2019  | 19  | 484  | 37026 | 
- | 2020-  | 9  | 503  | 44133 | 
+ | Year  | Videos  | Duration (min)  | no. Tokens |
+ | ----  | ------  | --------------  | ---------- |
+ | 2010-2014  | 4  | 18  | 2131 |
+ | 2015-2019  | 19  | 484  | 37026 |
+ | 2020-  | 11  | 686  | 47129 |
 
